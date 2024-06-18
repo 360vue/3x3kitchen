@@ -99,15 +99,6 @@
  "scrollBarOpacity": 0.5,
  "borderRadius": 0,
  "definitions": [{
- "class": "PanoramaPlayer",
- "viewerArea": "this.MainViewer",
- "mouseControlMode": "drag_rotation",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "displayPlaybackBar": true
-},
-{
  "thumbnailUrl": "media/panorama_26A173AB_2B8B_6C04_41C4_DE839B6A8C57_t.jpg",
  "hfovMax": 130,
  "label": "3x3",
@@ -405,6 +396,7 @@
   }
  ],
  "automaticZoomSpeed": 10,
+ "automaticRotationSpeed": 163,
  "class": "PanoramaCamera",
  "initialPosition": {
   "yaw": 0,
@@ -457,6 +449,16 @@
  ],
  "id": "mainPlayList",
  "class": "PlayList"
+},
+{
+ "class": "PanoramaPlayer",
+ "viewerArea": "this.MainViewer",
+ "mouseControlMode": "drag_rotation",
+ "gyroscopeEnabled": true,
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "displayPlaybackBar": true
 },
 {
  "maxWidth": 128,
@@ -553,7 +555,7 @@
  "progressBorderSize": 0,
  "toolTipFontStyle": "normal",
  "playbackBarOpacity": 1,
- "displayTooltipInTouchScreens": true,
+ "displayTooltipInTouchScreens": false,
  "playbackBarHeadShadowOpacity": 0.7,
  "toolTipShadowHorizontalLength": 0,
  "toolTipFontFamily": "Arial",
